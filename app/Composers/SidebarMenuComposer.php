@@ -44,20 +44,20 @@ class SidebarMenuComposer
         else $kmsMenu = $kmsMenu->merge($this->getSiteSubItems($this->siteService->getSite()));
 
         //Create regular menu items.
-        $kmsMenu->push((new KmsMenuItem())
-            ->setModelSlug('posts')
-            ->setUrl(route('posts.index'))
-            ->setName(__('KMS::sidebarMenu.posts')));
-
-        $kmsMenu->push((new KmsMenuItem())
-            ->setModelSlug('events')
-            ->setUrl(route('events.index'))
-            ->setName(__('KMS::sidebarMenu.events')));
-
-        $kmsMenu->push((new KmsMenuItem())
-            ->setModelSlug('services')
-            ->setUrl(route('services.index'))
-            ->setName(__('KMS::sidebarMenu.services')));
+//        $kmsMenu->push((new KmsMenuItem())
+//            ->setModelSlug('posts')
+//            ->setUrl(route('posts.index'))
+//            ->setName(__('KMS::sidebarMenu.posts')));
+//
+//        $kmsMenu->push((new KmsMenuItem())
+//            ->setModelSlug('events')
+//            ->setUrl(route('events.index'))
+//            ->setName(__('KMS::sidebarMenu.events')));
+//
+//        $kmsMenu->push((new KmsMenuItem())
+//            ->setModelSlug('services')
+//            ->setUrl(route('services.index'))
+//            ->setName(__('KMS::sidebarMenu.services')));
 
         $kmsMenu->push((new KmsMenuItem())
             ->setModelSlug('projects')
