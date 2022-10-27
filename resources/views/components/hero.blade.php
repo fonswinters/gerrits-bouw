@@ -1,6 +1,6 @@
 @if(isset($page->heroVideo))
     @php
-        if(!isset($imageSizes)) $imageSizes = [ 'small' => 839, 'medium' => 1151, 'large' => 1152];
+        if(!isset($imageSizes)) $imageSizes = [ 'small' => 839, 'medium' => 1025, 'large' => 3000];
         $images = $page->heroImage->documents;
         $caption = $page->heroImage->caption;
         $videoUrl = $page->heroVideo->url;
@@ -15,7 +15,7 @@
                     'videoAutoplay' => $videoAutoplay,
                     'videoPlayerId' => 'home-hero-video',
                 ])
-            {{-- The slider contains 1 or more images --}}
+                {{-- The slider contains 1 or more images --}}
             @elseif(isset($images) && $images->count() >= 1)
                 <div class="c-hero__slider">
                     @foreach($images as $image)
@@ -34,7 +34,7 @@
                     @endforeach
                 </div>
             @else
-            {{-- To indicate there are no hero images set show the placeholder image --}}
+                {{-- To indicate there are no hero images set show the placeholder image --}}
                 <div class="c-hero__slider">
                     <picture class="c-hero__picture  is-active" style="width: 100%; height: 100%;">
                         <img class="c-hero__image" src="/img/placeholder-hero.svg" >
@@ -55,15 +55,17 @@
 
             {{-- The caption is only shown when set--}}
             @if(!$videoUrl && !empty($caption))
-                <div class="c-hero__caption">
-                    <h2 class="c-hero__caption-inner">
-                        {!! $caption !!}
-                    </h2>
+                <div class="c-hero__meta">
+                    <div class="c-hero__caption">
+                        <h2 class="c-hero__caption-inner">
+                            {!! $caption !!}
+                        </h2>
+                    </div>
                 </div>
             @endif
         </div>
 
-        {{-- Scroll to button scrolls to the first component --}}
+
         <a class="c-hero__scroll  js-scroll-to-target" href="#component-item-1">
             @include('components.icons.arrowRight')
         </a>
