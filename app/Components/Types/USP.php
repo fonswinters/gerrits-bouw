@@ -20,7 +20,7 @@ class USP extends AbstractComponentType
     protected int $id = ComponentTypes::USP;
     protected string $name = 'usp';
 
-    const POSSIBLE_AMOUNT = 7;
+    const POSSIBLE_AMOUNT = 8;
 
     public function defineAttributesAndTabs()
     {

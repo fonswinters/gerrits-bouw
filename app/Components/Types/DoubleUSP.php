@@ -14,7 +14,7 @@ class DoubleUSP extends AbstractComponentType
     protected int $id = ComponentTypes::DOUBLE_USP;
     protected string $name = 'double-usp';
 
-    const POSSIBLE_AMOUNT = 5;
+    const POSSIBLE_AMOUNT = 10;
 
     public function defineAttributesAndTabs()
     {

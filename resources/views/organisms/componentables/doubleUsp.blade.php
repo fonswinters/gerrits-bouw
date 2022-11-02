@@ -7,7 +7,7 @@
                     <h2 class="o-double-usp__heading">{!! $component->left["header"] !!}</h2>
                 @endif
                 <ul class="o-double-usp__list">
-                    @for($i = 0; $i < 5; $i++)
+                    @for($i = 0; $i < 10; $i++)
                         @if(!empty($component->left["items"][$i]))
                             <li class="o-double-usp__item">{!! $component->left["items"][$i] !!}</li>
                         @endif
@@ -19,7 +19,7 @@
                     <h2 class="o-double-usp__heading">{!! $component->right["header"] !!}</h2>
                 @endif
                 <ul class="o-double-usp__list">
-                    @for($i = 0; $i < 5; $i++)
+                    @for($i = 0; $i < 10; $i++)
                         @if(!empty($component->right["items"][$i]))
                             <li class="o-double-usp__item">{!! $component->right["items"][$i] !!}</li>
                         @endif
