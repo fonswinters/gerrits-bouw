@@ -6,13 +6,13 @@
 @section('content')
 
     @include('components.pageTitle')
-
-    {{--When components are set on this page they will be put here --}}
-    @include('organisms.components')
     
     <div class="l-contain  o-block">
         @include('organisms.vacancyList')
     </div>
+
+    {{--When components are set on this page they will be put here --}}
+    @include('organisms.components')
 
     <div class="o-block">
         @include('organisms.calloutBar')
