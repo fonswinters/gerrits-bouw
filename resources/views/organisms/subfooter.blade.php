@@ -21,7 +21,5 @@
                 </li>
             </ul>
         </nav>
-
-        <div class="o-subfooter__trademark">@include('components.trademark')</div>
     </div>
 </div>
